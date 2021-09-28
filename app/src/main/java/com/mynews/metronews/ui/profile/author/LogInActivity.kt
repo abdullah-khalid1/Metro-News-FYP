@@ -34,8 +34,6 @@ class LogInActivity : AppCompatActivity() {
             supportActionBar!!.hide()
         }
 
-
-
         init()
     }
 
