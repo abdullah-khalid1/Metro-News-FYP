@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mynews.metronews">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.mynews.metronews.ui.NewsWebView"></activity>
+        <activity android:name="com.mynews.metronews.ui.OurTeam" />
+        <activity
+            android:name="com.mynews.metronews.ui.SplashScreen"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mynews.metronews.ui.profile.admin.AllAuthorsVideos" />
+        <activity android:name="com.mynews.metronews.ui.profile.author.AuthorVideoList" />
+        <activity android:name="com.mynews.metronews.ui.profile.admin.AllAuthorPosts" />
+        <activity android:name="com.mynews.metronews.ui.profile.admin.AdminProfileManagement"/>
+        <activity android:name="com.mynews.metronews.ui.profile.author.AuthorPostsListActivity" />
+        <activity android:name="com.mynews.metronews.ui.profile.author.InsertVideoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.mynews.metronews.ui.profile.author.InsertPostActivity"
+
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.mynews.metronews.ui.profile.author.AuthorProfileManagementActivity" />
+        <activity android:name="com.mynews.metronews.ui.profile.author.LogInActivity" />
+        <activity
+            android:name="com.mynews.metronews.ui.NewsVideoPlayer"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.mynews.metronews.ui.ApiNewsDetail" />
+        <activity android:name="com.mynews.metronews.ui.NewsApiActivity" />
+        <activity android:name="com.mynews.metronews.ui.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mynews.metronews.ui.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

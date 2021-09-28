@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.AfterAuthorSignIn">
+
+
+    <Button
+        android:id="@+id/mEditPosts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/insertpost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Add Post"
+        app:layout_constraintStart_toEndOf="@+id/mEditPosts"
+        app:layout_constraintTop_toTopOf="@+id/mEditPosts" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogOut"
+        app:layout_constraintBottom_toBottomOf="@+id/insertpost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/insertpost" />
+
+    <Button
+        android:id="@+id/add_video_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Add Video"
+        app:layout_constraintEnd_toEndOf="@+id/mEditPosts"
+        app:layout_constraintStart_toStartOf="@+id/mEditPosts"
+        app:layout_constraintTop_toBottomOf="@+id/mEditPosts" />
+</androidx.constraintlayout.widget.ConstraintLayout>

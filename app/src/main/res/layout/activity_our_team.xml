@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--    <com.google.android.material.appbar.AppBarLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:theme="@style/AppTheme.AppBarOverlay"-->
+    <!--        app:elevation="0dp">-->
+
+    <!--        <androidx.appcompat.widget.Toolbar-->
+    <!--            android:id="@+id/toolbar"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="?attr/actionBarSize"-->
+    <!--            android:background="@android:color/white"-->
+    <!--            app:contentInsetStartWithNavigation="0dp"-->
+    <!--            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+    <!--            app:theme="@style/Toolbar.Light" />-->
+
+    <!--        <View-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="1dp"-->
+    <!--            android:background="@color/light_grey_color" />-->
+
+    <!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Our Team"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/dark_grey_color"
+                app:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/profile_abdullah"
+                        app:civ_border="true"
+                        app:civ_border_color="@color/light_grey_color"
+                        app:civ_border_width="2dp"
+                        app:civ_shadow="true"
+                        app:civ_shadow_radius="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Abdullah Khalid"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/dark_grey_color"
+                        app:fontFamily="sans-serif-medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Mobile Dev And UI/UX Designer"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_color"
+                        app:fontFamily="sans-serif-light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/profile_hamza"
+                        app:civ_border="true"
+                        app:civ_border_color="@color/light_grey_color"
+                        app:civ_border_width="2dp"
+                        app:civ_shadow="true"
+                        app:civ_shadow_radius="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Hamza Shaheen"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/dark_grey_color"
+                        app:fontFamily="sans-serif-medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="S/W Engineer"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_color"
+                        app:fontFamily="sans-serif-light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/profile_shahram"
+                        app:civ_border="true"
+                        app:civ_border_color="@color/light_grey_color"
+                        app:civ_border_width="2dp"
+                        app:civ_shadow="true"
+                        app:civ_shadow_radius="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Shahram Hussain"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/dark_grey_color"
+                        app:fontFamily="sans-serif-medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Software QA"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_color"
+                        app:fontFamily="sans-serif-light" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/profile_mehmood"
+                        app:civ_border="true"
+                        app:civ_border_color="@color/light_grey_color"
+                        app:civ_border_width="2dp"
+                        app:civ_shadow="true"
+                        app:civ_shadow_radius="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Syed Mehmood"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/dark_grey_color"
+                        app:fontFamily="sans-serif-medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marketing"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_color"
+                        app:fontFamily="sans-serif-light" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="About Us"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/dark_grey_color"
+                    app:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Mision"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/grey_color"
+                    app:fontFamily="sans-serif-light" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Address"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/dark_grey_color"
+                    app:fontFamily="sans-serif-medium" />
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/my_hostel_map" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="New Canal Garder Society Near UOG"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lahore, Pakistan"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="54000"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_color" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
